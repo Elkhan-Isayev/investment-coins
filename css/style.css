@@ -1,0 +1,22 @@
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #d7c8eb;
+}
+
+tr:first-child,tr:last-child {
+    background-color: #833ae0;
+    color: #ffffff
+}
+
+td, th {
+    padding: 5px;
+}
+
+tr:hover {
+    background-color: yellow;       
+}
