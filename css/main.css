@@ -1,22 +1,41 @@
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
+header h1 {
+    margin-left: 124px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-wrapper {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    max-width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-image {
+    max-width: 172px;
+    max-height: 172px;
+}
+
+.coin-description h4 {
+    /* color: #833AE0; */
+    color: #8b46e2;
     
 }
 
-tr:nth-child(even) {
-    background-color: #d7c8eb;
+.coin-description-header a {
+    text-decoration: none;
 }
 
-tr:first-child,tr:last-child {
-    background-color: #833ae0;
-    color: #ffffff
-}
-
-td, th {
-    padding: 5px;
-}
-
-tr:hover {
-    background-color: yellow;       
+.coin-description p {
+    /* border: 1px solid red; */
+    font-size: 16px;
+    line-height: 19px;
+    
 }
