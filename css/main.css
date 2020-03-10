@@ -156,11 +156,13 @@ article {
 }
 
 .icon-info {
+    margin-top: 20px;
     background-color: rgba(196, 196, 196, 0.5);
     width: 40%;
     /* min-width: 400px; */
     padding: 12px 44px 39px 47px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
 }
 
 .icon-info-article {
