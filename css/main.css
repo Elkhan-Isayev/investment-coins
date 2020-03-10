@@ -116,16 +116,16 @@ header h1 {
 
 article {
     margin: 0 160px;
-    border: 1px solid red;
     display: flex;
     /* justify-content: space-between; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    min-width: 100px;
 }
 
 .icon-img {
    width: 50%;
    overflow: hidden;
-   min-width: 500px;
+   /* min-width: 500px; */
    position: relative;
 }
 
@@ -145,21 +145,25 @@ article {
     left: 0;
 }
 
+/* 
+.icon-img .obverse:hover + .reverse {
+    display: block;
+}  
+*/
+
 .icon-img:hover .reverse {
     display: block;
-} 
-
-
+}
 
 .icon-info {
     background-color: rgba(196, 196, 196, 0.5);
     width: 40%;
-    min-width: 400px;
+    /* min-width: 400px; */
     padding: 12px 44px 39px 47px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-.icon-info span {
+.icon-info-article {
     color: #7a7a7a
 }
 
@@ -173,3 +177,34 @@ article {
     font-size: 200%;
 }
 
+table {
+    margin-top: 5%;
+    border-collapse: collapse;
+}
+
+
+td {
+    padding: 5px;
+}
+
+tr td:first-child {
+    border-right: 1px solid #cac6c6;
+}
+
+tr {
+    border-bottom: 1px solid #cac6c6;
+}
+
+tr:last-child {
+    border-bottom: 0px solid #cac6c6;
+}
+
+tr:nth-child(2n-1) {
+    background-color: #ffffff;
+}
+
+.icon-info a {
+    display: block;
+    color: #8f4fe0;
+    margin-top: 100px;
+}
