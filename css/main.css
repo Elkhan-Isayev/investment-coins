@@ -1,3 +1,8 @@
+body {
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
 header h1 {
     margin-left: 124px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -9,23 +14,73 @@ header h1 {
 .main-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .coin-wrapper {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    max-width: 360px;
+    /* max-width: 360px; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    width: 50%;
+    min-width: 550px;
+}
+
+.coin-image-wrapper {
+    position: relative;
 }
 
 .coin-image {
     max-width: 172px;
     max-height: 172px;
+    min-width: 50px;
+    min-height: 50px;
 }
 
-.coin-description h4 {
+.coin-discount {
+    position: absolute;
+    background-color: #833AE0;
+    /* width: 10%;
+    height: 10%; */
+    color: white;
+    border-radius: 100%;
+    bottom: 70%;
+    left: 60%;
+    /* padding: 10%; */
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-discount div {
+    margin: auto auto;
+}
+
+.coin-info {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: nowrap;
+    width: 100%;
+    
+}
+
+.coin-description {
+    max-width: 360px;
+}
+
+.coin-description h4 a{
     /* color: #833AE0; */
-    color: #8b46e2;
+    color: #833ae0;
+
     
 }
 
@@ -37,5 +92,84 @@ header h1 {
     /* border: 1px solid red; */
     font-size: 16px;
     line-height: 19px;
-    
+    /* width: 80%; */
+    /* width: 80%; */
 }
+
+
+
+.coin-price {
+    margin-left: auto;
+    color: black;
+    font-weight: bold;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 123.4%;
+}
+
+.coin-price p:last-child {
+    color: #7c7c7c;
+    font-size: 75%;
+}
+
+/* ### description start ### */
+
+article {
+    margin: 0 160px;
+    border: 1px solid red;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.icon-img {
+   width: 50%;
+   overflow: hidden;
+   min-width: 500px;
+   position: relative;
+}
+
+.icon-img div img {
+    width: 100%;
+}
+
+.obverse {
+    width: 80%;
+}
+ 
+.reverse {
+    width: 80%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-img:hover .reverse {
+    display: block;
+} 
+
+
+
+.icon-info {
+    background-color: rgba(196, 196, 196, 0.5);
+    width: 40%;
+    min-width: 400px;
+    padding: 12px 44px 39px 47px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.icon-info span {
+    color: #7a7a7a
+}
+
+.icon-info p {
+    margin-top: 10%;
+}
+
+.price {
+    font-weight: bold;
+    color: black;
+    font-size: 200%;
+}
+
